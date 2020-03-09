@@ -89,8 +89,8 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0",
-    "electron-builder": "^22.3.6",
-    "electron": "^8.0.3",
+    "electron": "^8.1.0",
+    "electron-builder": "^21.2.0",
     "wait-on": "^4.0.1"
   },
   "jest": {
@@ -147,5 +147,12 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "build": {
+    "appId": "display",
+    "extends": null,
+    "files": [
+      "./build/**/*",
+      "./public/electron.js"
+    ]}
 }

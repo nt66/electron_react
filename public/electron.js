@@ -14,12 +14,14 @@ function createWindow () {
 
   // 并且为你的应用加载index.html
   // win.loadFile('index.html')
-  win.loadURL(
-    isDev ? 'http://localhost:3000':`file://${path.join(__dirname,"../build/index.html")}`
-  )
 
+  // console.log('3333',`file://${path.join(__dirname, "../build/index.html")}`)
+    win.loadURL(
+      isDev ? 'http://localhost:3000':`file://${path.join(__dirname, "../build/index.html")}`
+    )
   // 打开开发者工具
   // win.webContents.openDevTools()
+
 }
 
 // This method will be called when Electron has finished
